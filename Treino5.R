@@ -42,7 +42,7 @@ testing <- faithful[-inTraining,]
 
 # O modelo escolido foi "lm"
 
-modelFit <- train(waiting ~ eruptions, data = faithful, method = "lm")
+modelFit <- train(waiting ~ eruptions, data = training, method = "lm")
 modelFit # RMSE = 5.873226, Rsquared = 0.8163251, MAE = 4.745002  
 summary(modelFit) # Resumo do modelo 
 
